@@ -25,7 +25,7 @@
 
 ```
 	dependencies {
-	        implementation 'com.github.Asyncz:ZFLog:1.0.0'
+	        implementation 'com.github.Asyncz:ZFLog:1.0.2'
 	}
 ```
 
