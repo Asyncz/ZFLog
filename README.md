@@ -74,6 +74,9 @@
         ZFLog.writeCallBack = {level, tag, msg ->
             //自定义写入本地
         }
+	
+	// 打印null
+	ZFLog.e(null)
 ```
 
 ![img](http://thyrsi.com/t6/676/1551514153x2728278668.png)
