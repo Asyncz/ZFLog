@@ -1,8 +1,8 @@
 package com.aysgnz.zflogtest
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.aysgnz.zflog.ZFLog
 import com.aysgnz.zflog.ZFLogLevel
 import java.lang.RuntimeException

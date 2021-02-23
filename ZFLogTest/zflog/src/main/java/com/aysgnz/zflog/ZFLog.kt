@@ -178,7 +178,7 @@ object ZFLog{
         val pw = PrintWriter(sw, false)
         throwable.printStackTrace(pw)
         pw.flush()
-        var message = sw.toString()
+        val message = sw.toString()
         return message
     }
     /** 用来查找打印代码位置 */
@@ -187,7 +187,7 @@ object ZFLog{
         //第二行是：java.lang.Thread
         //前两行是固定的，需要跳过
         var i =  2
-        var size = trace.size
+        val size = trace.size
         while (i < size) {
             val e = trace[i]
             val name = e.className
@@ -203,7 +203,7 @@ object ZFLog{
     /** 输出文字边框格式 */
     fun formatMessage(): String {
         val sElements = Thread.currentThread().stackTrace
-        var stackOffset = getStackOffset(sElements)
+        val stackOffset = getStackOffset(sElements)
         val builder = StringBuilder()
         builder.append("  ").append(BR).append(TOP_BORDER).append(BR)
         if (custom.isNotEmpty()) {
